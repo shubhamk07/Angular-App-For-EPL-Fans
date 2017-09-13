@@ -1,0 +1,44 @@
+<div class="container-fluid" id="singlematch">
+    <nav class="navbar navbar-inverse">
+        <div>
+            <div class="navbar-header">
+
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/allMatches">All Matches</a></li>
+                <li><a href="#/stats">Stats</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <h2 style="text-align: center">Single Match Details : </h2>
+
+    <div class="table-responsive">
+
+        <table class="table  singleTable">
+            <thead>
+                <th> Date </th>
+                <th> Home Team </th>
+                <th> Score </th>
+                <th> Away Team </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> {{ matchDetails.show.date }}</td>
+                    <td> {{ matchDetails.show.team1}}</td>
+                    <td> {{matchDetails.show.score1}} - {{matchDetails.show.score2}}</td>
+                    <td> {{matchDetails.show.team2 }}</td>
+                </tr>
+                <tr id="bold">
+                    <td colspan="4">
+                        <h3>Winner : {{ matchDetails.show.winner }} </h3>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

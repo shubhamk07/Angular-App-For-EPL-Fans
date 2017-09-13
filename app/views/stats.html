@@ -1,0 +1,47 @@
+<div class="container-fluid" id="allteamStats">
+    <nav class="navbar navbar-inverse">
+        <div>
+            <div class="navbar-header">
+
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/allMatches">All Matches</a></li>
+                <li><a href="#/stats">Stats</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="table-responsive">
+        <table class="table table-inverse col-sm-12">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Team code</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Goals scored</th>
+                </tr>
+            </thead>
+            <tbody dir-paginate="teamStats in stats.teamStatistics |  itemsPerPage: 10">
+                <tr>
+                    <td style="font-size: 16px">{{teamStats.name}}</td>
+                    <td style="font-size: 16px">{{teamStats.teamCode}}</td>
+                    <td style="font-size: 16px">{{teamStats.played}}</td>
+                    <td style="font-size: 16px">{{teamStats.won}}</td>
+                    <td style="font-size: 16px">{{teamStats.lost}}</td>
+                    <td style="font-size: 16px">{{teamStats.draw}}</td>
+                    <td style="font-size: 16px">{{teamStats.goals}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: right">
+            <dir-pagination-controls></dir-pagination-controls>
+        </div>
+    </div>
+</div>
+</div>

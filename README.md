@@ -16,4 +16,4 @@ It also gives you the overall data about all the teams like -
   </ul>
   
   Materialistic design used. 
-  Template used from : <a href = "https://www.creative-tim.com/"></a>
+  Template used from : https://www.creative-tim.com/
